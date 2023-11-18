@@ -7,13 +7,15 @@ collections:
 defaults :
   - scope:
       path: ""
+      type: "posts"
     values:
-      layout: default
+      layout: news
 
   - scope:
-      path: "pages/more"
+      path: ""
     values:
-      layout: page
+      layout: default
+      
 
 # author info
 author : 

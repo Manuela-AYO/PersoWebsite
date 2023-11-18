@@ -1,0 +1,16 @@
+---
+layout: default
+title: News
+permalink: /news
+---
+
+<h1>Latest News</h1>
+
+<ul>
+    {% for news in site.posts %}
+    <li>
+        <h2><a href="{{ news.url }}">{{ news.title }}</a></h2>
+        {{ news.excerpt }}
+    </li>
+    {% endfor %}
+</ul>
