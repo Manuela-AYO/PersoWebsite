@@ -1595,4 +1595,17 @@ footer {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.news {
+  height: 90vh;
+  color: white;
+}
+
+.myNews:first-child {
+  margin-top: 30px;
+}
+
+p {
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
