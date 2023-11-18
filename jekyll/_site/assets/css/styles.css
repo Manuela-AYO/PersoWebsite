@@ -525,12 +525,30 @@ a {
       margin-top: 100px;
   }*/
 }
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.parent:hover {
+  animation: fadeIn 0.5s ease-out;
+}
+
 .project.card {
   border-radius: 15px;
   text-decoration: none !important;
   margin: 10px auto;
   color: #17191a;
+  z-index: -10;
   transition: transform 400ms;
+}
+.project.card .card-content {
+  box-sizing: border-box;
+  margin-top: 21px;
+  margin-left: 20px;
 }
 .project.card .card-img-top {
   border-radius: 15px 15px 0 0;
@@ -538,6 +556,14 @@ a {
 .project.card:hover:not(.post) {
   transform: translateY(-8px);
   box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+}
+.project.card span {
+  color: plum;
+  border: 1px solid plum;
+  border-radius: 15px;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .skill {

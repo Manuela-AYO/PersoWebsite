@@ -1,8 +1,29 @@
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.parent:hover {
+    animation: fadeIn 0.5s ease-out;
+}
+
 .project.card {
     border-radius: $rounded-borders;
     text-decoration: none!important;
     margin: 10px auto;
     color: #17191a;
+    z-index: -10;
+    //animation: fadeIn 0.5s ease-out;
+
+    .card-content {
+        box-sizing: border-box;
+        margin-top: 21px;
+        margin-left: 20px;
+    }
 
     .card-img-top {
         border-radius: $rounded-borders $rounded-borders 0 0;
@@ -15,4 +36,12 @@
         box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
     }
 
+    span {
+        color: plum;
+        border: 1px solid plum;
+        border-radius: $rounded-borders;
+        font-size: 0.8em;
+        box-sizing: border-box;
+        padding: 5px;
+    }
 }
