@@ -1,9 +1,8 @@
 <nav class="themed navbar">
     <div class="links">
-        <a href="/" class="active">Home</a>
-        <a href="/more.html">More</a>
-        <a href="/projects.html">Projects</a>
-        <a href="#">News</a>
+        {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url == item.link %} class="active" {% endif %}>{{ item.name }}</a>
+        {% endfor %}
     </div>
     <i class="fa fa-bars icon" onclick="showMenu()"></i>
     <i class="fa fa-times icon" onclick="showMenu()"></i>
