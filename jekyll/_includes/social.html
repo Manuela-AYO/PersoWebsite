@@ -1,0 +1,15 @@
+<div class="container-fluid justify-content-center">
+    {%- assign unfocused_color = "6c757d" -%}
+    {% for account in site.author %}
+        {%- assign service_name = account[0] -%}
+        {%- assign service_data = site.data.social-media[service_name] -%}
+        {%- if service_data -%}
+        <a href="{{ service_data.url }}{{ account[1] }}" class="social mx-1"
+            style="color: #{{ unfocused_color }};"
+            onmouseover="this.style.color='#{{ service_data.color }}'"
+            onmouseout="this.style.color='#{{ unfocused_color }}'">
+            <i class="fa-1x {{ service_data.icon}}"></i>
+        </a>
+        {%- endif -%}
+    {% endfor %}
+</div>

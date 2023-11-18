@@ -1,0 +1,30 @@
+# collections
+collections:
+  projects:
+    output : true
+
+# define the layout of each page
+defaults :
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+  - scope:
+      path: "pages/more"
+    values:
+      layout: page
+
+# author info
+author : 
+  name : Manuela AYO
+  email : manuelaayo7@gmail.com
+  github : Manuela-AYO
+
+
+# exclude from processing
+exclude : 
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

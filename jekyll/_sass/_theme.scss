@@ -1,0 +1,29 @@
+@mixin themed($property, $light-value, $dark-value) {
+    [data-theme="light"] & {
+        #{$property}: $light-value;
+    }
+
+    [data-theme="dark"] & {
+        #{$property}: $dark-value;
+    }
+}
+
+#theme-toggler:before{
+    @include themed(content,"🌑","☀️");
+}
+
+.text-themed {
+    @include themed(color, $text-black, $text-white);
+}
+
+.bg-themed {
+    @include themed(background-color, $light, $dark)
+}
+
+.switch-toggle .btn-holder {
+    @include themed(color, $text-black, $text-white);
+}
+
+.answer .iframe .style {
+    @include themed(color, $text-black, $text-white);
+}

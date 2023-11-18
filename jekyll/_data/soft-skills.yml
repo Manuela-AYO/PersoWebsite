@@ -1,0 +1,23 @@
+- name : Leadership
+  percentage : 80
+  color :
+
+- name : Communication
+  percentage : 50
+  color : success
+
+- name : Organization
+  percentage : 60
+  color : danger
+
+- name : Fun
+  percentage : 80
+  color : 
+
+- name : Rigour
+  percentage : 60
+  color : success
+
+- name : Visionary
+  percentage : 45
+  color : danger

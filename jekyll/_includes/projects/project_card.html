@@ -1,0 +1,21 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+    <a href="{{ project_url }}" class="project card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
+        {%- if project_img -%}
+        <img src="{{ project_img }}" alt="{{ project_name }}" class="card-img-top" id="{{ project_id }}"/>
+        {%- endif -%}
+        <div class="card-body">
+            <h5 id="{{ project_id }}-name" class="card-title">
+                {%- if project_type == "remote" -%}
+                <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="Github Repository"></i>
+                {%- endif -%}
+                {{ project_name }}
+            </h5>
+            <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+            <p id="{{ project_id }}-tools" class="card-text">
+                {%- for language in project_languages -%}
+                <span class="badge badge-pill text-primary border border-primary ml-1">{{ language }}</span>
+                {%- endfor -%}
+            </p>
+        </div>
+    </a>
+</div>
