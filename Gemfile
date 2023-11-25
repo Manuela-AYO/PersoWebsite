@@ -10,4 +10,6 @@ source "https://rubygems.org"
 # visits a web page
 
 # add jekyll as a dependency
-gem "jekyll" 
+# gem "jekyll" 
+
+gem "github-pages", "-> 228", group: :jekyll_plugins
