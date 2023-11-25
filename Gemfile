@@ -12,4 +12,5 @@ source "https://rubygems.org"
 # add jekyll as a dependency
 # gem "jekyll" 
 
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
+gem "wdm", ">= 0.1.0" if Gem.win_platform?
