@@ -2,7 +2,8 @@ domain: manuelaayo.github.io
 
 url: https://manuelaayo.github.io
 
-baseurl: /
+baseurl: /manuelaayo.github.io/
+
 # collections
 collections:
   projects:
