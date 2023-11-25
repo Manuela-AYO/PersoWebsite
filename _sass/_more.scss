@@ -97,6 +97,6 @@ h2 {
   
   @for $i from 0 through 100 {
     .skill-#{$i} {
-      width: percentage(calc($i/100));
+      width: percentage($i/100);
     }
   }
