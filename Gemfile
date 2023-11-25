@@ -12,4 +12,4 @@ source "https://rubygems.org"
 # add jekyll as a dependency
 # gem "jekyll" 
 
-gem "github-pages", "-> 228", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins

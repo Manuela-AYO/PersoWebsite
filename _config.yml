@@ -1,8 +1,8 @@
-domain: manuelaayo.github.io
+#domain: manuelaayo.github.io
 
-url: https://manuelaayo.github.io
+#url: https://manuelaayo.github.io
 
-baseurl: /manuelaayo.github.io/
+#baseurl: /manuelaayo.github.io/
 
 # collections
 collections:
