@@ -34,3 +34,4 @@ exclude :
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - "*.lock"
